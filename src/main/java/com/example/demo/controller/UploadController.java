@@ -11,7 +11,7 @@ import java.nio.file.Paths;
 @RestController
 public class UploadController {
 
-    private static String UPLOAD_DIR = System.getProperty("user.dir") + "\\upload-dir\\";
+    private static String UPLOAD_DIR = System.getProperty("user.dir") + "\\";
 
     @PostMapping("/upload")
     public String upload(@RequestParam("file") MultipartFile file) {
